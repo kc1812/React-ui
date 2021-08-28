@@ -1,0 +1,135 @@
+
+:root {
+    --default-light: #fff;
+    --default-dark: #000;
+    --basic: #3777d1;
+    --primary: #2fcb53;
+    --secondary: #4c4c4c;
+    --danger: rgb(214, 69, 64);
+    --disabled: #bababa;
+    --link: #40a9ff;
+}
+
+.button {
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.7em 1.2em;
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  min-width: 96px;
+  border-radius: 4px;
+  background-color: var(--default-light);
+  border: 1px solid var(--default-dark);
+  color: var(--default-dark);
+  transition: background-color 0.2s ease-in;
+  -webkit-transition: background-color 0.2s ease-in;
+  -moz-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: var(--default-dark);
+    border-color: var(--default-light);
+    color: var(--default-light);
+}
+
+.medium {
+    font-size: 16px;
+}
+  
+.large {
+    font-size: 18px;
+}
+
+.outline {
+    background-color: var(--default-light);
+    border-color: var(--basic);
+    color: var(--basic);
+}
+
+.outline:hover {
+    background-color: var(--basic);
+    border-color: var(--default-light);
+    color: var(--default-light); 
+}
+
+.basic {
+    background-color: var(--basic);
+    border-color: var(--default-light);
+    color: var(--default-light);
+}
+
+.basic:hover {
+    background-color: var(--default-light);
+    border-color: var(--basic);
+    color: var(--basic);
+}
+
+.link {
+    background-color: transparent;
+    color: var(--secondary);
+    box-shadow: none;
+}
+
+.link:hover {
+    color: var(--link);
+    background-color: transparent;
+}
+
+.secondary {
+    background-color: var(--default-light);
+    border-color: var(--secondary);
+    color: var(--secondary);
+}
+
+.secondary:hover {
+    background-color: var(--secondary);
+    border-color: var(--default-light);
+    color: var(--default-light);
+}
+
+.primary {
+    background-color: var(--primary);
+    border-color: var(--default-light);
+    color: var(--default-light);
+}
+
+.primary:hover {
+    background-color: var(--default-light);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.danger {
+    background-color: var(--danger);
+    border-color: var(--default-light);
+    color: var(--default-light);
+}
+
+.danger:hover {
+    background-color: var(--default-light);
+    border-color: var(--danger);
+    color: var(--danger);
+}
+
+.disabled {
+    background-color: var(--default-light);
+    border-color: var(--disabled);
+    color: var(--disabled);
+    box-shadow: none;
+    opacity: 0.7;
+    cursor: not-allowed;
+    border: 1px solid;
+}
+
+.disabled:hover {
+    background-color: var(--default-light);
+    color: var(--disabled);
+    border-color: var(--disabled);
+}
