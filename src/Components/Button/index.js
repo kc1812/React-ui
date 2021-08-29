@@ -4,7 +4,6 @@ import cx from "classnames";
 import PropTypes from "prop-types";
 
 const Button = ({onClick, className, label, size, variant, disabled, disabledClassName, children}) => {
-    console.log('styles',styles);
     const _className = cx(
         className,
         styles[size],
